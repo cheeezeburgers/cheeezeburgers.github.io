@@ -12,27 +12,60 @@ run `bundle exec jekyll serve`
 
 ## Post format
 
+### Post Header
+
 ```yml
----
 header:
-  teaser: /assets/images/teaser-default.png
+  teaser: /assets/images/header-default.jpg
+  image: /assets/images/header-default.jpg          # ODER overlay
   overlay_image: /assets/images/header-default.jpg
-  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "screenshot"
-title: ""
-categories:
-  - CAT
-tags:
-  - TAG
-# additional
+  overlay_filter: 0.2 # same as adding an opacity of x.x to a black background
+  caption: "Photo by Iqbal Muakhid on Unsplash"
+  actions:
+  - label: "More Info" # "Download" ...
+    url: "https://unsplash.com"
+```
+
+### Title & Subtitle
+
+```yml
+title: "Jekyll & mm Documentation"
 subtitle: "Version 2.0"
-toc: true
-name: "Michael Rose"        # overwrite author
 description: "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
-#date:           # to repost. syntax: 2019-04-18T15:34:30-04:00
-#excerpt_separator: "<!--more-->"
-#link: https://github.com   # posting a link
----
+```
+
+# Date and Teaser
+
+```yml
+date:           # to repost. syntax: 2019-04-18T15:34:30-04:00
+excerpt_separator: "<!--more-->"
+```
+
+### Meta (cat & tag)
+
+```yml
+categories:
+  - Documentation
+tags:
+  - docs
+  - documentation
+  - jekyll
+  - mm
+  - theme
+```
+
+### Author
+
+```yml
+name: "Michael Rose"        # overwrite author
+```
+
+### TOC
+
+```yml
+toc: true
+toc_label: "  Index"
+toc_icon: #"cog"
 ```
 
 ## Page format
@@ -45,6 +78,7 @@ title: "Page Not Found"
 excerpt: "Page not found. Your pixels are in another canvas."
 sitemap: false      # not in menu
 author_profile: true
+link: https://github.com   # posting a link
 ---
 ```
 
