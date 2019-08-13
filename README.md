@@ -3,3 +3,56 @@
 FiSi Documentation Share Blog?
 
 This could be a very good journal for me. The theme is `mm`.
+
+## Deployment
+
+run `bundle exec jekyll serve`
+
+> `jekyll serve` **will not work!**
+
+## Post format
+
+```yml
+---
+header:
+  teaser: /assets/images/teaser-default.png
+  overlay_image: /assets/images/header-default.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "screenshot"
+title: ""
+categories:
+  - CAT
+tags:
+  - TAG
+# additional
+subtitle: "Version 2.0"
+toc: true
+name: "Michael Rose"        # overwrite author
+description: "A flexible Jekyll theme for your blog or site with a minimalist aesthetic."
+#date:           # to repost. syntax: 2019-04-18T15:34:30-04:00
+#excerpt_separator: "<!--more-->"
+#link: https://github.com   # posting a link
+---
+```
+
+## Page format
+
+```yml
+---
+layout: posts
+permalink: /404.html
+title: "Page Not Found"
+excerpt: "Page not found. Your pixels are in another canvas."
+sitemap: false      # not in menu
+author_profile: true
+---
+```
+
+## Troubleshooting
+
++ https://jekyllrb.com/docs/step-by-step/01-setup/
+  + official docs (shitty)
++ https://github.com/jekyll/jekyll/issues/3103
+  + gem 'github.pages' error
+    + > `jekyll serve` **will not work!**
+    + run `bundle exec jekyll serve`
