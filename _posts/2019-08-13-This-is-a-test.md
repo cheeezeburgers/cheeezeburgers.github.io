@@ -1,3 +1,13 @@
+---
+categories:
+  - Blog
+ tags:
+  - Test
+  - Fisi
+  - Documentation
+  -Docs
+---
+
 # This is a test
 
 ## Index
